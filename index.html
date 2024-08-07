@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Fotografia Automotiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">AutoPhoto</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="scroll-link">Início</a></li>
+                <li><a href="#sobre" class="scroll-link">Sobre</a></li>
+                <li><a href="#portfolio" class="scroll-link">Portfólio</a></li>
+                <li><a href="#servicos" class="scroll-link">Serviços</a></li>
+                <li><a href="#contato" class="scroll-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="fade-in">
+        <div id="carro3d"></div>
+        <h1>João Silva</h1>
+        <p>Fotografia Automotiva Profissional</p>
+        <button class="scroll-link" href="#portfolio">Ver Portfólio</button>
+    </section>
+
+    <section id="sobre" class="fade-in">
+        <img src="https://via.placeholder.com/300" alt="Foto do fotógrafo">
+        <h2>Sobre</h2>
+        <p>João Silva é um fotógrafo automotivo apaixonado por carros e pela arte de capturar sua beleza...</p>
+    </section>
+
+    <section id="portfolio" class="fade-in">
+        <h2>Portfólio</h2>
+        <div class="galeria">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 1" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 2" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 3" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 4" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 5" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 6" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 7" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 8" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 9" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 10" class="hover-zoom">
+            <img src="https://via.placeholder.com/300" alt="Foto de carro 11" class="hover-zoom">
+        </div>
+    </section>
+
+    <section id="servicos" class="fade-in">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Fotografia de carros para revistas e anúncios</li>
+            <li>Sessões fotográficas para donos de carros</li>
+            <li>Cobertura de eventos automotivos</li>
+            <li>Fotos para venda de carros</li>
+        </ul>
+    </section>
+
+    <section id="contato" class="fade-in">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Email: joao@autophoto.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 João Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="car3d.js"></script>
+</body>
+
+</html>
